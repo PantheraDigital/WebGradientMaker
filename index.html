@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gradient Picker</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Panthera">
+        <meta name="description" content="Create gradients to use in your projects."><!--description used in search result of page-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--describes how the layout and content adapts to the mobile viewport-->
+        <meta name="application-name" content="Color Gradient Maker"><!--name used for the "Add to Home Screen" function in their web browser -->
+        <meta name="keywords" content="HTML, CSS, JavaScript"><!--keywords for search engines-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="background-gradient">
+            <div id="gradient-window">
+
+                <h1>Color Gradient Maker</h1>
+                <label for="linear-input-angle">Angle: </label>
+                <input type="number" id="linear-input-angle" title="Gradient Angle" min="0" max="360" value="45">
+
+                <ol id="color-table">
+                    <li id="color-set_0">
+                        <div id="color-wrapper_0" class="color-wrapper">
+                            <input type="color" class="color-Picker" id="linear-input-color_0" title="Color 1">
+                        </div>
+                        <input type="range" class="alpha-Slider" id="linear-input-color-alpha_0" title="Color 1 Alpha" min="0" max="1" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <input type="number" class="alpha-number" id="alpha-number_0" min="0" max="1" step="0.01" oninput="this.previousElementSibling.value = this.value">
+                    </li>
+                    <li id="color-set_1">
+                        <div id="color-wrapper_1" class="color-wrapper">
+                            <input type="color" class="color-Picker" id="linear-input-color_1" title="Color 2">        
+                        </div>
+                        <input type="range" class="alpha-Slider" id="linear-input-color-alpha_1" title="Color 2 Alpha" min="0" max="1" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <input type="number" class="alpha-number" id="alpha-number_1" min="0" max="1" step="0.01" oninput="this.previousElementSibling.value = this.value">
+                    </li>
+                </ol>
+    
+                <button id="add-color-button" title="Add Color" type="button">+</button>
+                <button id="reset-color-list" title="Reset Colors" type="button">x</button>
+            <div id="code-window">
+                <code id="code-text">code</code>
+            </div>  
+
+            </div>
+            
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

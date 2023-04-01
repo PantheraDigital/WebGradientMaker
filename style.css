@@ -1,0 +1,99 @@
+html {
+    min-height: 100%;
+}
+body{
+    height:100%; 
+    width:100%;
+    background-color: #cccccc;
+    background-image: url("././background.jpg");
+}
+
+#background-gradient{
+    background-image: linear-gradient(45deg, cyan, red);
+    height:100%;
+    width:100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#code-window{
+    box-sizing: border-box;
+    position: relative;
+    top: 10px;
+    padding: 10px 10px 10px 10px;
+    color:black;
+    background-color: grey;
+    background: linear-gradient(25deg , rgb(167, 167, 167), rgb(132, 130, 206)) padding-box,
+              linear-gradient(45deg , magenta, cyan) border-box;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: rgb(38, 57, 77) 0px 10px 20px -10px;
+}
+
+#gradient-window{
+    box-sizing: border-box;
+    padding: 0px 10px 20px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    background-image: linear-gradient(125deg , rgb(230, 227, 227), rgb(138, 129, 158));
+    border-radius: 10px;
+    border: black 2px solid ;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+ol{
+    list-style-type: none;
+    padding-left: 0px;
+}
+li{
+    margin: 10px 0px;
+}
+
+button[type=button], input[type=color], input[type=range]{
+    cursor: pointer;
+}
+
+button[type=button]{
+    font-size: medium;
+}
+
+input[type=color]{
+    opacity: 0;
+    height: 2rem;
+    width: 2rem;
+    box-sizing: border-box;
+    pointer-events: initial;
+    visibility: visible;
+}
+input[type=range]{
+    filter: grayscale(100%);
+    visibility: visible;
+}
+input[type=number]{
+    border: black solid 1px;
+}
+
+.color-wrapper {
+    background-color: black;
+    display: inline-block;
+    visibility: hidden;
+}
+  
+.color-wrapper::before {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    outline: black solid 2px;
+    border: white solid 3px;
+    height: 2rem;
+    width: 2rem;
+    pointer-events: none;
+    background-color: inherit;
+    visibility: visible;
+    box-sizing: border-box;
+}
+
