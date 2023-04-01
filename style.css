@@ -18,6 +18,8 @@ body{
 }
 
 #code-window{
+    min-width: 300px;
+    max-width: 300px;
     box-sizing: border-box;
     position: relative;
     top: 10px;
